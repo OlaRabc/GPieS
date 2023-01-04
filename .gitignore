@@ -1,0 +1,31 @@
+
+*.log
+# GPieS-front/
+# Logs
+GPieS-front/logs
+GPieS-front/*.log
+GPieS-front/npm-debug.log*
+GPieS-front/cyarn-debug.log*
+GPieS-front/cyarn-error.log*
+GPieS-front/cpnpm-debug.log*
+GPieS-front/clerna-debug.log*
+
+GPieS-front/node_modules
+GPieS-front/.DS_Store
+GPieS-front/dist
+GPieS-front/dist-ssr
+GPieS-front/coverage
+GPieS-front/*.local
+
+GPieS-front//cypress/videos/
+GPieS-front//cypress/screenshots/
+
+# Editor directories and files
+GPieS-front/.vscode/*
+GPieS-front/!.vscode/extensions.json
+GPieS-front/.idea
+GPieS-front/*.suo
+GPieS-front/*.ntvs*
+GPieS-front/*.njsproj
+GPieS-front/*.sln
+GPieS-front/*.sw?
