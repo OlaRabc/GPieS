@@ -4,11 +4,11 @@
     <div class="working-dog">
       <img src="../assets/img/working-dome.png" />
     </div>
-    <button type="button" @click="baclToIndex()">Strona główna</button>
+    <button type="button" @click="$emit('changePage', 0)">Strona główna</button>
   </div>
 </template>
 
-<style scoped >
+<style scoped>
 .soon {
   font-family: "Nunito", sans-serif;
   display: flex;
@@ -33,35 +33,29 @@ button {
   font-weight: 700;
   font-size: 1.4rem;
   cursor: pointer;
-  transition: color .75s, background-color .75s;
+  transition: color 0.75s, background-color 0.75s;
   margin-bottom: 150px;
-  
 }
-button:hover{
-  color:  white;
+button:hover {
+  color: white;
   background: #495f7a;
-  transition: color .75s, background-color .75s;
+  transition: color 0.75s, background-color 0.75s;
 }
 @media (max-width: 768px) {
   button {
-  width: 90%;
+    width: 90%;
   }
 }
 @media (hover: none) {
-  button{
-  color:  white;
-  background: #495f7a;
-  transition: color .75s, background-color .75s;
-}
+  button {
+    color: white;
+    background: #495f7a;
+    transition: color 0.75s, background-color 0.75s;
+  }
 }
 </style>
 <script>
 export default {
   name: "Soon",
-  methods: {
-    baclToIndex() {
-      console.log("baclToInde");
-    },
-  },
 };
 </script>

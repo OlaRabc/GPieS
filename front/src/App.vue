@@ -5,20 +5,16 @@ import Footer from "./components/Footer.vue";
 import Products from "./components/Products.vue";
 import Main from "./components/Main.vue";
 
-import { library } from "@fortawesome/fontawesome-svg-core";
-import {faArrowDown} from '@fortawesome/free-solid-svg-icons'
 </script>
 
 <template>
   <div>
-    <Nav />
+    <Nav @changePage="changePage"/>
 
     <div class="wrapper">
-      <!-- <Soon /> -->
-      <Products/>
-      <!-- <Main /> -->
-      <font-awesome-icon icon="fa-brands fa-facebook-f" />
-      <faArrowDown/>
+      <Main v-if="page === 0" />
+      <Products v-if="page === 1"/>
+      <Soon v-if="page === 3"  @changePage="changePage"/>
     </div>
 
     <Footer />
@@ -33,3 +29,17 @@ footer {
   height: 190px;
 }
 </style>
+<script>
+export default {
+  data() {
+    return {
+      page: 0
+    }
+  },
+  methods: {
+    changePage(pageNumber) {
+      this.page=pageNumber;
+    },
+  },
+};
+</script>

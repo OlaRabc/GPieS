@@ -9,10 +9,10 @@
     <div id="burger">Menu</div>
     <nav>
       <ol>
-        <li>Strona Główna</li>
-        <li>Produkty</li>
-        <li>Zaloguj</li>
-        <li>Zarejestruj</li>
+        <li @click="$emit('changePage', 0)">Strona Główna</li>
+        <li @click="$emit('changePage', 1)">Produkty</li>
+        <li @click="$emit('changePage', 2)">Zaloguj</li>
+        <li @click="$emit('changePage', 3)">Zarejestruj</li>
       </ol>
     </nav>
   </header>
