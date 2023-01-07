@@ -17,7 +17,7 @@
               </a>
             </p>
           </div>
-          <div class="links-section__fanpage">
+          <!-- <div class="links-section__fanpage">
             <div class="fanpage">
               <i class="fa fa-linkedin" aria-hidden="true"></i>
             </div>
@@ -30,7 +30,7 @@
             <div class="fanpage">
               <i class="fa fa-twitter" aria-hidden="true"></i>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="footer__policy-section">
           <div class="policy">

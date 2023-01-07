@@ -1,7 +1,7 @@
 <template>
   <div class="products">
     <div class="page">
-      <div class="square" id="currencyTools">
+      <div class="square">
         <div class="square__content">
           <h1 class="square__content--title">WhereIsMofMof3000</h1>
           <p>
@@ -12,6 +12,7 @@
           </p>
           <a class="square__content--link" href="#"> Zamów już teraz!</a>
         </div>
+        
         <div class="box__img">
           <img
             class="square__img"
@@ -20,7 +21,7 @@
         </div>
       </div>
 
-      <div class="square" id="standingOrders">
+      <div class="square">
         <div class="square__content">
           <h1 class="square__content--title">WhereIsŁofŁof3001</h1>
           <p class="square__content--content">
