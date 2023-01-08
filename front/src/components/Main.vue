@@ -48,7 +48,7 @@
 
       <div class="square" id="currencyTools">
         <div class="square__content">
-          <h1 class="square__content--title">Jak działa GPS</h1>
+          <h1 class="square__content--title">Jak działa GPS?</h1>
           <p class="square__content--content">
             GPS, czyli Global Positioning System, to system nawigacji
             satelitarnej opracowany przez amerykański rząd, który pozwala

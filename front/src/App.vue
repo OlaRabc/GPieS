@@ -4,6 +4,8 @@ import Nav from "./components/Nav.vue";
 import Footer from "./components/Footer.vue";
 import Products from "./components/Products.vue";
 import Main from "./components/Main.vue";
+import Login from "./components/Login.vue";
+
 
 </script>
 
@@ -14,6 +16,8 @@ import Main from "./components/Main.vue";
     <div class="wrapper">
       <Main v-if="page === 0" />
       <Products v-if="page === 1"/>
+      <Login v-if="page === 2"/>
+
       <Soon v-if="page === 3"  @changePage="changePage"/>
     </div>
 
@@ -22,13 +26,8 @@ import Main from "./components/Main.vue";
 </template>
 
 <style scoped>
-footer {
-  background-color: #495f7a;
-  height: 150px;
-  position: relative;
-  height: 190px;
-}
 </style>
+
 <script>
 export default {
   data() {
