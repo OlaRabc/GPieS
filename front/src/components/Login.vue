@@ -62,8 +62,7 @@ export default {
   },
   methods: {
     login() {
-      // Make an HTTP request to authenticate the user's credentials
-      // and set the login state
+      this.$emit("changePage", 4);
     },
   },
 };
