@@ -14,10 +14,10 @@
             swojego psa za pomocą naszej strony internetowej.
           </p>
         </div>
-        <div class="box__img border">
+        <div class="box__img">
           <img
             class="square__img"
-            src="https://cdn.benchmark.pl/uploads/backend_img/c/recenzje/2020_09/5411-darmowa-nawigacja-android/darmowa-nawigacja-gps.jpg"
+            src="../assets/img/walk.png"
           />
         </div>
       </div>
@@ -41,7 +41,7 @@
         <div class="box__img border">
           <img
             class="square__img"
-            src="https://a.allegroimg.com/s512/11b164/f2c0ae5f4df0a6b7bc7b810a8e1d/NANO-GPS-LOKALIZATOR-PODSLUCH-NAGRYWANIE-APLIKACJA"
+            src="../assets/img/dog-and-satellite.png"
           />
         </div>
       </div>
@@ -62,7 +62,7 @@
         <div class="box__img">
           <img
             class="square__img"
-            src="https://cinkciarz.pl/images/currency-exchange/currency-tools/services-top-img.png"
+            src="../assets/img/dog-and-2satellite.png"
           />
         </div>
       </div>
@@ -116,6 +116,8 @@
 }
 .square__content--content {
   margin-bottom: 32px;
+  line-height: 1.7em;
+
 }
 .square__img {
   max-width: 100%;
