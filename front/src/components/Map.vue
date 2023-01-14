@@ -2,12 +2,19 @@
   <div class="map">
     <div class="map__content">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.219702490395!2d15.721748999999999!3d52.09393299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbe104b3b26fda304!2zNTLCsDA1JzM4LjIiTiAxNcKwNDMnMTguMyJF!5e0!3m2!1spl!2spl!4v1673198519814!5m2!1spl!2spl"
         style="border: 0; border-radius: 14px; width: 100%; height: 500px"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+        frameborder="0"
+        scrolling="no"
+        marginheight="0"
+        marginwidth="0"
+        :src=linkX()
+      ></iframe
+      ><br /><small
+        ><a
+          href="https://www.openstreetmap.org/?mlat=52.09376&amp;mlon=15.72320#map=18/52.09376/15.72319"
+          >Wyświetl większą mapę</a
+        ></small
+      >
     </div>
     <div class="map__nav">
       <!-- <div class="edit">
@@ -68,14 +75,14 @@
   padding-left: 8px;
   color: #495f7a;
 }
-li{
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 16px;
-    cursor: pointer;
+li {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  cursor: pointer;
 }
 @media (max-width: 992px) {
-  .map{
+  .map {
     flex-direction: column-reverse;
     margin: 32px;
   }
@@ -97,11 +104,19 @@ export default {
     return {
       gpsName: "Psota",
       cordsList: [195916, 329268, 895079, 479932],
+      markerX: '15.72319507598877',
+      markerY: '52.09367337611854',
+      link: "https://www.openstreetmap.org/export/embed.html?bbox=3.718823075294496%2C52.0923128122943%2C30.727561712265016%2C52.095205883526475&layer=mapnik&marker=",
+      // link: "https://www.openstreetmap.org/export/embed.html?bbox=${mapY}.718823075294496%2C52.0923128122943%2C${mapX}.727561712265016%2C52.095205883526475&layer=mapnik&marker=",
     };
   },
   methods: {
     changeChords(cord) {
       console.log(cord);
+    },
+    linkX() {
+      var mapLink=this.link+this.markerY+'%2C'+this.markerX
+      return mapLink
     },
   },
 };

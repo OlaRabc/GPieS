@@ -1,5 +1,6 @@
 <script setup>
 import Nav from "./components/Nav.vue";
+import NavLogged from "./components/NavLogged.vue";
 import Footer from "./components/Footer.vue";
 
 import Soon from "./components/Soon.vue";
@@ -14,8 +15,8 @@ import Map from "./components/Map.vue";
 
 <template>
   <div>
-    <Nav @changePage="changePage"/>
-
+    <Nav v-if="!log" @changePage="changePage"/>
+    <NavLogged v-if="log" @changePage="changePage"/>
     <div class="wrapper">
       <Main v-if="page === 0" />
       <Products v-if="page === 1"/>
@@ -36,11 +37,14 @@ import Map from "./components/Map.vue";
 export default {
   data() {
     return {
-      page: 0
+      page: 0,
+      log: false
     }
   },
   methods: {
     changePage(pageNumber) {
+      if(pageNumber===4)  this.log = true;
+      else this.log = false;
       this.page=pageNumber;
     },
   },

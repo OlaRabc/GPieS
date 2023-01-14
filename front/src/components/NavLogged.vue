@@ -15,10 +15,7 @@
     </div>
     <nav :class="[isMenuOpen?'close':'', 'nav']">
       <ol>
-        <li @click="$emit('changePage', 0)">Strona Główna</li>
-        <li @click="$emit('changePage', 1)">Produkty</li>
-        <li @click="$emit('changePage', 2)">Zaloguj</li>
-        <li @click="$emit('changePage', 3)">Zarejestruj</li>
+        <li @click="$emit('changePage', 0)">Wyloguj</li>
       </ol>
     </nav>
   </header>
